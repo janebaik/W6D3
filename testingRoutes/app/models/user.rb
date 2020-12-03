@@ -12,7 +12,7 @@
 
 class User < ApplicationRecord
 
-    validates :shared_artworks, unique: true
+    # validates :shared_artworks, unique: true
     has_many :viewers,
         primary_key: :id,
         foreign_key: :viewer_id,
